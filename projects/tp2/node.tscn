@@ -176,13 +176,20 @@ sources/0 = SubResource("TileSetAtlasSource_tda05")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_right = 1162.0
-offset_bottom = 645.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_112p8")
 stretch_mode = 1
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_112p8")]
 position = Vector2(242, 503)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0.333333, 8.66666)
+scale = Vector2(0.333333, 0.333333)
 
 [node name="Layer0" type="TileMapLayer" parent="."]
 texture_filter = 1
